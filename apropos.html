@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+  <title >PROSID CENTRE </title>
+<link rel="icon" type="image/x-icon"  href=" favicon (1).ico">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+  <title>Sidebar Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+</head>
+<style>
+    
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+body {
+  position: relative;
+      background-image:url(' 3073.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      padding: 20px;}
+      .container {
+      display: flex;         
+      justify-content: space-between; 
+      align-items: stretch; 
+      gap: 50px;   
+    }
+      .a{
+        background: #f5f5f5;
+      border: 1px solid #ccc;
+      
+
+      }
+      .b{
+        background: #f5f5f5;
+      border: 1px solid #ccc;
+      
+      }
+      .animated-title {
+            color: rgb(44, 201, 1);
+            font-size: 50px;
+            margin: left 200px;
+            font-family: 'Playfair Display', serif;
+           
+            text-align: center;
+            position: center;
+            padding: 20px;
+          
+        }
+        
+        .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .exclamation {
+            display: inline-block;
+            opacity: 0;
+            transform: scale(2) rotate(15deg);
+            color: rgb(44, 201, 1);
+            transition: all 0.5s ease-out;
+        }
+        
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            border-radius: 3px;
+            width: 0;
+            transition: width 1.2s ease-out 1s;
+        }
+        
+        .shadow {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 80%);
+            opacity: 0;
+            transition: opacity 0.8s ease-out 1.2s;
+        }
+        
+        /* Animation states */
+        .animate .word {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animate .exclamation {
+            opacity: 1;
+            transform: scale(1) rotate(0);
+        }
+        
+        .animate .underline {
+            width: 100%;
+        }
+        
+        .animate .shadow {
+            opacity: 0.3;
+        }
+        
+        /* Délais pour chaque mot */
+        .word:nth-child(1) { transition-delay: 0.1s; }
+        .word:nth-child(2) { transition-delay: 0.3s; }
+        .word:nth-child(3) { transition-delay: 0.5s; }
+        .exclamation { transition-delay: 0.7s; }
+
+</style>
+<body>
+     <div class="animated-title">
+        <span class="word">Qui</span>
+        <span class="word">sommes</span>
+        <span class="word">nous</span>
+        <span class="exclamation">!</span>
+       
+    </div>
+    <h2> Fondée en 1993 et implantée au Sahel, au gouvernorat de Monastir. Prosid Centre est une société commerciale spécialisée dans la vente de produits sidérurgiques.<br>
+
+Nous proposons une large gamme de produits, notamment des tôles, tubes, aciers spéciaux, laiton, acier, polyamide, et bien plus encore.<br>
+
+Avec plus de 30 ans d’expérience, nous mettons notre expertise au service de vos projets industriels.<br>
+
+Grâce à l’engagement de nos équipes, la réactivité de notre service, nos infrastructures de stockage et notre parc de véhicules pour les livraisons, nous vous garantissons des approvisionnements en aciers fiables, sûrs et réguliers, dans une relation de partenariat solide.<br>
+
+Contactez-nous pour découvrir toutes nos gammes de produits !</h2>
+<img src="a.png" alt="Description de l'image" style="margin-left: 170px;">
+<div class="container">
+<div class="a">
+<h1 style="color: rgb(74, 93, 237);font-size: 20px "><em><i> Retrouvez-nous à l’adresse suivante :</i></em></h1>
+<a ><b>Av.H.Bourguiba  Route de Sousse 5015 Bouhjar</b></a>
+<iframe 
+  src="https://www.google.com/maps?q=Prosid+Centre+Bouhjar+Monastir&output=embed"
+  width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+
+
+
+</div>
+
+
+<div class="b">
+<h1 style="color: rgb(74, 93, 237);font-size: 20px;"> <em>Pour toute demande, contactez-nous par :</em></h1>
+
+     
+<img src="gmail.png"  style="width: 20px;height: 20px"> <b style="color: rgb(9, 9, 244);">Mail:</b>
+<a href="mailto:saoussen.prosid@gmail.com"><b>saoussen nasr ,</b></a>
+    
+<a href="mailto:alisaidane@gmail.com"><b>Ali saidane</b></a>
+<br>
+<img src="contact.png" alt="Green circle" style="float:left;width: 20px;height: 20px">
+<b style="color: rgb(9, 9, 244);">Contact telephonique:</b><br>
+<a ><b>73434021/73434075/58567303/58843843</b> </a><br>
+<img src="pa.png" alt="Green circle" style="float:left;width: 20px;height: 20px">
+ <b style="color: rgb(9, 9, 244);"> Fax:</b><br><b>73434298 </b> 
+   
+</div>
+</div>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Démarrer l'animation après un court délai
+            setTimeout(function() {
+                document.querySelector('.animated-title').classList.add('animate');
+            }, 500);
+            
+            // Optionnel: Réanimer au clic
+            document.querySelector('.animated-title').addEventListener('click', function() {
+                this.classList.remove('animate');
+                setTimeout(() => {
+                    this.classList.add('animate');
+                }, 50);
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

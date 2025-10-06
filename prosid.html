@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+  <title >PROSID CENTRE </title>
+<link rel="icon" type="image/x-icon"  href=" favicon (1).ico">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+  <title>Sidebar Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+</head>
+
+
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+body {
+  overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-image: url('cap.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 100px;
+  
+}
+
+    .background {
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+    }
+   .background-slider {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 60%;
+    z-index: -2; 
+    animation :slideBackground 44s infinite;
+    background-size: cover;
+    background-position: center;
+  }
+@keyframes slideBackground {
+    0%, 5%,100%{
+        background-image: url('10.png');
+       
+    }
+  
+   
+        
+    10%  {
+        background-image: url('2.png');
+     
+
+    }
+    
+    
+    20% {
+        background-image: url('3.png');
+       
+
+    }
+   
+    30% {
+        background-image: url('4.png');
+      
+
+    }
+   
+    40% {
+        background-image: url('5.png');
+      }
+
+     50% {
+        background-image: url('6.png');
+     
+
+    }
+    60% {
+        background-image: url('7.png');
+     
+
+    }
+    70% {
+        background-image: url('9.png');
+     
+
+    }
+   
+    
+    80% {
+        background-image: url('11.png');
+     
+
+    }
+    90% {
+        background-image: url('8.png');
+     
+
+    }
+    
+}
+  .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #68ca67;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      color: rgb(21, 11, 226);
+    }
+    .sidebar h2 {
+      margin: 0;
+      font-size: 20px;
+      color: rgb(30, 0, 255);
+    }
+
+    
+    .menu-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu-links a {
+      text-decoration: none;
+      color: rgb(9, 19, 201);
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .menu-links a:hover {
+      color: orange;
+    }
+    .menu-links img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+
+
+
+
+.big-number {
+      font-size: 200px;
+      font-weight: bold;
+      background: url('ey.jpg') no-repeat center;
+      background-size: cover;
+      top: 450px;
+      left:1250px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+      display: inline-block;
+    }
+
+    .big-number small {
+      position: absolute;
+      top: 25px;
+      right: -20px;
+      font-size: 20px;
+      color: rgb(47, 48, 47);
+    }
+    .subtitle {
+      font-size: 15px;
+      margin-top: 420px;
+      margin-left: 1100px;
+    }
+
+    .subtitle span {
+      font-weight: bold;
+      color: #1a2d72;
+    }
+
+.e {
+  position: fixed;
+  bottom: 45px;       
+  right: 1000px;       
+ 
+  font-size: 20px;
+  z-index: 999;
+  
+  color: rgb(5, 10, 6);
+ }
+
+
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 40px; 
+}
+
+
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+ 
+
+.arrow {
+  font-size: 30px;
+  animation: clignoter 1s infinite;
+  margin-top: 10px;
+  color: rgb(29, 200, 32);
+}
+
+@keyframes clignoter {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+     
+ 
+      
+  
+  </style>
+
+<body>
+<div class="background-slider ">
+
+</div>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <div class="menu-links">
+       <a href="apropos.html">
+        <img src="about.png" alt="Facebook">A propos</a>
+        <a href="NosProduits.html">
+        <img src="produit.png" alt="Facebook">Nos produits</a>
+
+      
+      <a href="https://www.facebook.com/profile.php?id=100085032634533&locale=fr_FR" target="_blank">
+        <img src="face.png" alt="Facebook">
+        Facebook
+      </a>
+<a href="https://www.linkedin.com/company/prosid" target="_blank">
+        <img src="linkedin.png" alt="Facebook">
+        Linkedin
+      </a>
+
+      
+    </div>
+  </div>
+  
+ 
+
+
+
+<div class="big-number">
+    31
+    <small>ans</small>
+  </div>
+  <div class="subtitle">
+    DANS LE DOMAINE DE LA <span>SIDÉRURGIE EN TUNISIE</span>
+  </div>
+      
+    
+        </div>
+        
+        
+       
+
+   
+   
+
+<script>
+  document.querySelectorAll('.swipe-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); 
+      const href = this.getAttribute('href');
+
+      
+      document.body.classList.add('swiping-out');
+
+      
+      setTimeout(() => {
+        window.location.href = href;
+      }, 500); 
+    });
+  });
+ 
+ 
+    
+  
+</script>
+
+
+</body>
+</html>

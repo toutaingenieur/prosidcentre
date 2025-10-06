@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+  <title >PROSID CENTRE </title>
+<link rel="icon" type="image/x-icon"  href=" favicon (1).ico">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+  <title>Sidebar Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+</head>
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+body {
+  position: relative;
+     background-image:url(' 3073.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      padding: 20px;}
+      .container {
+      display: flex;         
+      justify-content: space-between; 
+      align-items: stretch; 
+      gap: 50px;   
+    }
+       .animated-title {
+            color: rgb(44, 201, 1);
+            font-size: 50px;
+            margin: left 200px;
+            font-family: 'Playfair Display', serif;
+           
+            text-align: center;
+            position: center;
+            padding: 20px;
+          
+        }
+        
+        .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .exclamation {
+            display: inline-block;
+            opacity: 0;
+            transform: scale(2) rotate(15deg);
+            color: rgb(44, 201, 1);
+            transition: all 0.5s ease-out;
+        }
+        
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            border-radius: 3px;
+            width: 0;
+            transition: width 1.2s ease-out 1s;
+        }
+        
+        .shadow {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 80%);
+            opacity: 0;
+            transition: opacity 0.8s ease-out 1.2s;
+        }
+        
+        /* Animation states */
+        .animate .word {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animate .exclamation {
+            opacity: 1;
+            transform: scale(1) rotate(0);
+        }
+        
+        .animate .underline {
+            width: 100%;
+        }
+        
+        .animate .shadow {
+            opacity: 0.3;
+        }
+        .animated-tit {
+            color: rgb(31, 12, 201);
+            font-size: 20px;
+            margin: left 300px;
+            font-family: 'Playfair Display', serif;
+           
+            text-align: center;
+            position: center;
+            padding: 20px;
+          
+        }
+        /* Délais pour chaque mot */
+        .word:nth-child(1) { transition-delay: 0.1s; }
+        .word:nth-child(2) { transition-delay: 0.3s; }
+        .word:nth-child(3) { transition-delay: 0.5s; }
+        .exclamation { transition-delay: 0.7s; }
+
+    .categorie {
+      margin-bottom: 50px;
+    }
+
+    .categorie h3 {
+      margin-bottom: 15px;
+      color: #33b222; 
+     
+      padding-bottom: 5px;
+    }
+
+    .produits {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap; 
+    }
+
+    .produit img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: white;
+    }
+
+    .produit p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      color: #444;
+    }
+
+</style>
+<body>
+     <div class="animated-title">
+        <span class="word">Decouvrez </span>
+        <span class="word">nos </span>
+        <span class="word">produits</span>
+        <span class="exclamation">!</span>
+       
+    </div>
+    <div class="animated-tit">
+        <span class="word">Qualité et performance </span>
+        <span class="word">pour </span>
+        <span class="word">vos besoins </span>
+        
+       
+    </div>
+     <div class="categorie">
+    <h3><b><em><i>Aciers au Carbone et Alliés</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="acier1.jpg" alt="Tôle inox">
+        <p>XC48 (Rond, Plat, Hexagonal)</p>
+      </div>
+      <div class="produit">
+        <img src="acier2.jpg" alt="Barre inox">
+        <p>42CD4 Pré-traité (Rond)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="acier3.webp" alt="Barre inox">
+        <p>Acier genre Stub (115CV3) (Rond)</p>
+      </div>
+      <div class="produit">
+        <img src="acier4.jpg" alt="Barre inox">
+        <p>Acier au Plomb (S300PB) (Rond)</p>
+      </div>
+       <div class="produit">
+        <img src="acier5.jpg" alt="Barre inox">
+        <p>Acier Etiré Rectifié (E24) (Rond)</p>
+      </div>
+       <div class="produit">
+        <img src="acier6.jpg" alt="Barre inox">
+        <p>Acier à clavettes (Carré)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="categorie">
+    <h3><b><em><i>Aciers Inoxydables</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="acier7.webp" alt="Tôle inox">
+        <p>Inox Ferritique Décoratif AISI 430</p>
+      </div>
+      <div class="produit">
+        <img src="acier8.jpg" alt="Barre inox">
+        <p>Inox Austénitique Alimentaire AISI 304L</p>
+      </div>
+     
+      <div class="produit">
+        <img src="acier9.webp" alt="Barre inox">
+        <p>Inox Austénitique Anti-Corrosion AISI 316L</p>
+      </div>
+      <div class="produit">
+        <img src="acier10.jpg" alt="Barre inox">
+        <p>Inox Réfractaire AISI 310S</p>
+      </div>
+       <div class="produit">
+        <img src="acier11.webp" alt="Barre inox">
+        <p>Inox 304 Alimentaire (Rond, Plat, Cornière)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+   <div class="categorie">
+    <div class="produits">
+      <div class="produit">
+        <h3><b><em><i> Aluminium et Alliages</i></em></b></h3>
+        <img src="acier12.jpg" alt="Tôle inox">
+        <p>Aluminium AU4G et Alumec 79 (Rond, Plat)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+   <div class="categorie">
+    <h3><b><em><i>Alliages Cuivreux (Non-Ferreux)
+</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="acier13.jpg" alt="Barre inox">
+        <p>Laiton de décolletage CUZNAOPB2/CUZNAOPB3 (Rond, Hexagonal)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="acier14.jpg" alt="Barre inox">
+        <p>Bronze UE7 et UE12 (Rond Plein, Rond Creux)</p>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="categorie">
+    <h3><b><em><i>Fontes
+</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="acier15.webp" alt="Barre inox">
+        <p>Fonte G5500 (GJS500-7) (Rond Plein, Rond Creux)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="acier16.jpg" alt="Barre inox">
+        <p>BFonte FT25 (GJL250) (Rond Plein, Rond Creux)</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="categorie">
+    <h3><b><em><i> Plastiques et Polymères</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="aciera.jpg" alt="Tôle inox">
+        <p>Polyamide PA6.6 (Rond - Nature/Noir)</p>
+      </div>
+      <div class="produit">
+        <img src="acierb.jpg" alt="Barre inox">
+        <p>POM-C (Rond - Noir)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="acierc.jpg" alt="Barre inox">
+        <p>Téflon (PTFE) (Rond)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="categorie">
+    <h3><b><em><i> Profilés Structurels</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="aa.jpg" alt="Tôle inox">
+        <p>Fer IPE (IPE 80 à 600)</p>
+      </div>
+      <div class="produit">
+        <img src="bb.jpg" alt="Barre inox">
+        <p>Fer UPN (UPN 80 à 400)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="cc.jpg" alt="Barre inox">
+        <p>Fer HEA (HEA 100 à 1000)</p>
+      </div>
+      <div class="produit">
+        <img src="dd.jpg" alt="Barre inox">
+        <p>Fer HEB (HEB 100 à 1000)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ <div class="categorie">
+    <h3><b><em><i> Laminés Marchands</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="a1.jpg" alt="Tôle inox">
+        <p>Fer Plat (10x4 à 400x30)</p>
+      </div>
+      <div class="produit">
+        <img src="a2.jpg" alt="Barre inox">
+        <p>Fer Carré (6 à 60)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="a3.jpg" alt="Barre inox">
+        <p>Fer Rond (8 à 110)</p>
+      </div>
+      <div class="produit">
+        <img src="a4.jpg" alt="Barre inox">
+        <p>Cornière (20 à 200)</p>
+      </div>
+      <div class="produit">
+    </div>
+  </div>
+  <div class="categorie">
+    <h3><b><em><i>  Tôles</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="a5.jpg" alt="Tôle inox">
+        <p>Tôles Laminées à Froid (LAF)</p>
+      </div>
+      <div class="produit">
+        <img src="a6.jpg" alt="Barre inox">
+        <p>Tôles Laminées à Chaud (LAC)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="a7.jpg" alt="Barre inox">
+        <p>Tôles Fortes (15-100mm)</p>
+      </div>
+      <div class="produit">
+        <img src="a8.jpg" alt="Barre inox">
+        <p>Tôles Galvanisées</p>
+      </div>
+    </div>
+  </div>
+<div class="categorie">
+    <h3><b><em><i>  Tubes</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="b1.png" alt="Tôle inox">
+        <p>Tubes Noirs (Rond, Carré, Rectangulaire)</p>
+      </div>
+      <div class="produit">
+        <img src="b2.jpg" alt="Barre inox">
+        <p>Tubes Inox (Rond, Carré, Rectangulaire)</p>
+      </div>
+     
+      <div class="produit">
+        <img src="b3.png" alt="Barre inox">
+        <p>Tubes Galvanisés (Rond, Carré, Rectangulaire)</p>
+      </div>
+      <div class="produit">
+        <img src="b4.jpg" alt="Barre inox">
+        <p>Tubes sans Soudure</p>
+      </div>
+      <div class="produit">
+        <img src="b5.jpg" alt="Barre inox">
+        <p>Tubes Galvanisés Filetés (Gaz)</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="categorie">
+    <h3><b><em><i> Produits Métalliques Déployés et Grillage</i></em></b></h3>
+    <div class="produits">
+      <div class="produit">
+        <img src="c1.png" alt="Tôle inox">
+        <p>Grillage et Métal Déployé</p>
+      </div>
+      <div class="produit">
+        <img src="c2.jpg" alt="Barre inox">
+        <p>Caillebotis</p>
+      </div>   
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            setTimeout(function() {
+                document.querySelector('.animated-title').classList.add('animate');
+            }, 500);
+            
+            
+            document.querySelector('.animated-title').addEventListener('click', function() {
+                this.classList.remove('animate');
+                setTimeout(() => {
+                    this.classList.add('animate');
+                }, 50);
+            });
+        });
+         document.addEventListener('DOMContentLoaded', function() {
+           
+            setTimeout(function() {
+                document.querySelector('.animated-tit').classList.add('animate');
+            }, 500);
+            
+           
+            document.querySelector('.animated-tit').addEventListener('click', function() {
+                this.classList.remove('animate');
+                setTimeout(() => {
+                    this.classList.add('animate');
+                }, 50);
+            });
+        });
+    </script>
+</body>
